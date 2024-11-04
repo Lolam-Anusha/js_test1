@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Question-3</h1>
+    <script>
+        const totalClasses = +prompt("Enter total number of classes:");
+        const classesAttended = +prompt("Enter total number classes attended:");
+        let attendance = (classesAttended/totalClasses) * 100;
+        if(attendance>=75){
+            console.log(`Eligible (${attendance} % attendance)`);
+        }
+        else{
+            console.log("Not Eligible")
+        }
+    </script>
+</body>
+</html>

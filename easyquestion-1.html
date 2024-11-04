@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Question-1</h1>
+    <script>
+       const totalAmount = +prompt("Enter the total purchase amount:");
+       if(totalAmount>500){
+        finalAmount = totalAmount - (20/100 * totalAmount);
+        console.log(`Final amount = ${finalAmount} Rs`);
+       } 
+       else if(totalAmount>200 && totalAmount<500){
+        finalAmount = totalAmount - (10/100 * totalAmount);
+        console.log(`Final amount = ${finalAmount} Rs`);
+       }
+       else{
+        console.log(`Final amount with no dicount = ${totalAmount} Rs`)
+       }
+    </script>
+</body>
+</html>

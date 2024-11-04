@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Question-2</h1>
+    <script>
+        let userInput = prompt("Enter the elements for an array:");
+        let array = userInput.split(",");
+        let patternFollows = true;
+        for(i=0;i<array.length;i++){
+            if((+array[i]%2==0 && +array[i+1]%2==0) || (+array[i]%2 !=0 && +array[i+1]%2 !=0)){
+                patternFollows = false;
+                break;
+            }
+        }
+        if(patternFollows){
+            console.log("Pattern Followed");
+        }
+        else{
+            console.log("Pattern Broken");
+        }
+    </script>
+</body>
+</html>

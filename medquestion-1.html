@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Question-1</h1>
+    <script>
+        const age = +prompt("Enter the age:");
+        const income = +prompt("Enter the income:");
+        const hasCriminalRecord = prompt("Enter if there is any criminal record:").toLowerCase();
+        if((age>=21 && age<=60) && income>20000 && hasCriminalRecord=="false"){
+                console.log("Eligible for Loan");
+            }
+        else{
+            console.log("Not Eligible for Loan");
+        }
+    </script>
+</body>
+</html>

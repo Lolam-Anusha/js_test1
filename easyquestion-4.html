@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Question-4</h1>
+    <script>
+        const lateDays = +prompt("Enter number of late days:");
+        if(lateDays>=1 && lateDays<=5){
+            TotalFineAmount = lateDays*2;
+            console.log(`Total Fine Amount = ${TotalFineAmount}`);
+        }
+        else if(lateDays>=6 && lateDays<=10){
+            TotalFineAmount = lateDays*3;
+            console.log(`Total Fine Amount = ${TotalFineAmount}`);
+        }
+        else{
+            TotalFineAmount = lateDays*5;
+            console.log(`Total Fine Amount = ${TotalFineAmount}`);
+        }
+    </script>
+</body>
+</html>
